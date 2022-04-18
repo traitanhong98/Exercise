@@ -22,6 +22,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         nav.isNavigationBarHidden = true
         window?.rootViewController = nav
         window?.makeKeyAndVisible()
+        // Commit 002
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
