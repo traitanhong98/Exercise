@@ -20,6 +20,8 @@
 		C3B6A0BB280C5A4C00136E88 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B6A0BA280C5A4C00136E88 /* Models.swift */; };
 		C3B6A0BE280C658500136E88 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B6A0BC280C658500136E88 /* MainViewController.swift */; };
 		C3B6A0BF280C658500136E88 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3B6A0BD280C658500136E88 /* MainViewController.xib */; };
+		C65F886C280D4FCB0099D742 /* MainViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65F886A280D4FCB0099D742 /* MainViewCell.swift */; };
+		C65F886D280D4FCB0099D742 /* MainViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C65F886B280D4FCB0099D742 /* MainViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		C3B6A0BA280C5A4C00136E88 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		C3B6A0BC280C658500136E88 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		C3B6A0BD280C658500136E88 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		C65F886A280D4FCB0099D742 /* MainViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewCell.swift; sourceTree = "<group>"; };
+		C65F886B280D4FCB0099D742 /* MainViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +147,7 @@
 			children = (
 				C3B6A0BC280C658500136E88 /* MainViewController.swift */,
 				C3B6A0BD280C658500136E88 /* MainViewController.xib */,
+				C65F886E280D5E6A0099D742 /* Cell */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -161,6 +166,15 @@
 				C3B6A0BA280C5A4C00136E88 /* Models.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		C65F886E280D5E6A0099D742 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C65F886A280D4FCB0099D742 /* MainViewCell.swift */,
+				C65F886B280D4FCB0099D742 /* MainViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,6 +285,7 @@
 				C3B6A08F280C55D000136E88 /* Assets.xcassets in Resources */,
 				C3B6A08D280C55CF00136E88 /* Main.storyboard in Resources */,
 				C3B6A0BF280C658500136E88 /* MainViewController.xib in Resources */,
+				C65F886D280D4FCB0099D742 /* MainViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,6 +315,7 @@
 				C3B6A088280C55CF00136E88 /* SceneDelegate.swift in Sources */,
 				C3B6A0BE280C658500136E88 /* MainViewController.swift in Sources */,
 				C3B6A0B8280C5A3D00136E88 /* Datas.swift in Sources */,
+				C65F886C280D4FCB0099D742 /* MainViewCell.swift in Sources */,
 				C3B6A0BB280C5A4C00136E88 /* Models.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
