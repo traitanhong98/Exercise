@@ -8,7 +8,7 @@
 import UIKit
 
 class MainViewController: UIViewController {
-
+    
     @IBOutlet weak var mainView: UITableView!
     var arrData = employees
     override func viewDidLoad() {
@@ -22,6 +22,12 @@ class MainViewController: UIViewController {
         mainView.dataSource = self
         mainView.register(UINib(nibName: "MainViewCell", bundle: nil), forCellReuseIdentifier: "MainViewCell")
     }
+    
+    @IBAction func clickedChangeInformationEmployeeVC(_ sender: Any) {
+        let vc = InformationViewController()
+        vc.arrInfor = arrData
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
 }
 
 // MARK: - UITableViewDelegate, UITableViewDataSource
@@ -34,15 +40,17 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
         // dequeueReusableCell dùng để tái sử dụng cell liên tục
         let cell = mainView.dequeueReusableCell(withIdentifier: "MainViewCell") as! MainViewCell
         let data = arrData[indexPath.row]
-        cell.lbName.text = data.name
-        cell.lbAdress.text = data.address
-        if data.isMale == false {
-            cell.lbGender.text = "nữ"
-        } else {
-            cell.lbGender.text = "nam"
-        }
-        cell.lbStatus.text = data.status
+        cell.bindData(employee: data)
         return cell
     }
-
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let select = arrData[indexPath.row]
+        let item = DetailViewController()
+        item.employee = select
+        self.navigationController?.pushViewController(item, animated: true)
+    }
+    
 }
+
+

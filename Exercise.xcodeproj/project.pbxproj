@@ -22,6 +22,10 @@
 		C3B6A0BF280C658500136E88 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3B6A0BD280C658500136E88 /* MainViewController.xib */; };
 		C65F886C280D4FCB0099D742 /* MainViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65F886A280D4FCB0099D742 /* MainViewCell.swift */; };
 		C65F886D280D4FCB0099D742 /* MainViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C65F886B280D4FCB0099D742 /* MainViewCell.xib */; };
+		C65F8875280EBBE00099D742 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65F8873280EBBE00099D742 /* DetailViewController.swift */; };
+		C65F8876280EBBE00099D742 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C65F8874280EBBE00099D742 /* DetailViewController.xib */; };
+		C65F8879280FB4530099D742 /* InformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65F8877280FB4530099D742 /* InformationViewController.swift */; };
+		C65F887A280FB4530099D742 /* InformationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C65F8878280FB4530099D742 /* InformationViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +65,10 @@
 		C3B6A0BD280C658500136E88 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		C65F886A280D4FCB0099D742 /* MainViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewCell.swift; sourceTree = "<group>"; };
 		C65F886B280D4FCB0099D742 /* MainViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewCell.xib; sourceTree = "<group>"; };
+		C65F8873280EBBE00099D742 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		C65F8874280EBBE00099D742 /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		C65F8877280FB4530099D742 /* InformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationViewController.swift; sourceTree = "<group>"; };
+		C65F8878280FB4530099D742 /* InformationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InformationViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +155,10 @@
 			children = (
 				C3B6A0BC280C658500136E88 /* MainViewController.swift */,
 				C3B6A0BD280C658500136E88 /* MainViewController.xib */,
+				C65F8873280EBBE00099D742 /* DetailViewController.swift */,
+				C65F8874280EBBE00099D742 /* DetailViewController.xib */,
+				C65F8877280FB4530099D742 /* InformationViewController.swift */,
+				C65F8878280FB4530099D742 /* InformationViewController.xib */,
 				C65F886E280D5E6A0099D742 /* Cell */,
 			);
 			path = Controllers;
@@ -283,9 +295,11 @@
 			files = (
 				C3B6A092280C55D000136E88 /* LaunchScreen.storyboard in Resources */,
 				C3B6A08F280C55D000136E88 /* Assets.xcassets in Resources */,
+				C65F8876280EBBE00099D742 /* DetailViewController.xib in Resources */,
 				C3B6A08D280C55CF00136E88 /* Main.storyboard in Resources */,
 				C3B6A0BF280C658500136E88 /* MainViewController.xib in Resources */,
 				C65F886D280D4FCB0099D742 /* MainViewCell.xib in Resources */,
+				C65F887A280FB4530099D742 /* InformationViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,6 +324,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C65F8875280EBBE00099D742 /* DetailViewController.swift in Sources */,
 				C3B6A08A280C55CF00136E88 /* ViewController.swift in Sources */,
 				C3B6A086280C55CF00136E88 /* AppDelegate.swift in Sources */,
 				C3B6A088280C55CF00136E88 /* SceneDelegate.swift in Sources */,
@@ -317,6 +332,7 @@
 				C3B6A0B8280C5A3D00136E88 /* Datas.swift in Sources */,
 				C65F886C280D4FCB0099D742 /* MainViewCell.swift in Sources */,
 				C3B6A0BB280C5A4C00136E88 /* Models.swift in Sources */,
+				C65F8879280FB4530099D742 /* InformationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

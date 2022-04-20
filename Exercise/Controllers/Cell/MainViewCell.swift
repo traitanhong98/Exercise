@@ -18,15 +18,18 @@ class MainViewCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
     }
-
-    override func prepareForReuse() {
-       // lbGender.text = "Label"
-    }
     
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    func bindData(employee: Employee) {
+        lbName.text = employee.name
+        lbAdress.text = employee.address
+        if employee.isMale {
+            lbGender.text = "nam"
+        } else {
+            lbGender.text = "nữ"
+        }
+        //cell.lbStatus.text  = data.dayWorking
+        let level = EmployeeLevel.getEmployeeLevel(dayWorking: employee.dayWorking)
+        lbStatus.text = level.title
     }
     
 }

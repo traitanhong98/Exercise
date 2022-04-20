@@ -125,7 +125,7 @@
                 <outlet property="lbName" destination="SGS-tQ-JOQ" id="roC-29-yFx"/>
                 <outlet property="lbStatus" destination="nV5-Hy-PU5" id="ecO-L8-MOS"/>
             </connections>
-            <point key="canvasLocation" x="221.01449275362322" y="191.18303571428569"/>
+            <point key="canvasLocation" x="-134" y="198"/>
         </tableViewCell>
     </objects>
     <resources>
