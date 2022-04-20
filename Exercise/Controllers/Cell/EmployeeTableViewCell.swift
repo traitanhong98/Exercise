@@ -16,10 +16,14 @@ class EmployeeTableViewCell: UITableViewCell {
     
     @IBAction func btn_edit(_ sender: Any) {
         
-    }
-    @IBAction func btn_delete(_ sender: Any) {
+        print("edit")
         
     }
+    @IBAction func btn_delete(_ sender: Any) {
+        print("delete")
+    }
+    
+   
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -34,13 +38,18 @@ class EmployeeTableViewCell: UITableViewCell {
      
     }
     
- 
-    
-    
-
-    
-    
-
+    func binData(employee: Employee) {
+        showName.text      = employee.name
+        showAddress.text   = employee.address
+        if employee.isMale {
+            showSex.text = "Nam"
+        } else {
+            showSex.text = "Nữ"
+        }
+        let rankMember = EmployeeRanks.getEmployeeRanks(dayWorking: employee.dayWorking)
+        
+        showPosition.text = rankMember.title
+    }
     
     
 }
