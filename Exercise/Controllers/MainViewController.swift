@@ -11,7 +11,7 @@ class MainViewController: UIViewController {
     @IBOutlet weak var showDetail: UIButton!
     @IBOutlet weak var showTabEmployees: UITableView!
     var dataEmployees = employees
- 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         showTabEmployees.register(UINib(nibName: "EmployeeTableViewCell", bundle: nil), forCellReuseIdentifier: "EmployeeTableViewCell")
@@ -21,6 +21,12 @@ class MainViewController: UIViewController {
     
     
     @IBAction func tapShowDetail(_ sender: Any) {
+//        let selectArrEmployee = dataEmployees[0]
+        
+        let show_DetailEmployee = DetailEmployeesViewController()
+        show_DetailEmployee.employee = dataEmployees
+        
+        navigationController?.pushViewController(show_DetailEmployee, animated: true)
         
     }
 }
@@ -35,35 +41,24 @@ extension MainViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
- 
+        
         
         let cell = showTabEmployees.dequeueReusableCell(withIdentifier: "EmployeeTableViewCell") as! EmployeeTableViewCell
-                let data = dataEmployees[indexPath.row]
+        let data = dataEmployees[indexPath.row]
+        cell.binData(employee: data)
         
-                    cell.showName.text      = data.name
-                    cell.showAddress.text   = data.address
-                    if data.isMale == false {
-                        cell.showSex.text = "nữ"
-                    } else {
-                        cell.showSex.text = "nam"
-                    }
-                let positionNumber = data.dayWorking
-
-                    switch positionNumber {
-                      case 0...200:
-                        cell.showPosition.text = "Junior"
-                      case 201...400:
-                        cell.showPosition.text = "Middle"
-                      case 401...600:
-                        cell.showPosition.text = "Senior"
-
-                      default:
-                        cell.showPosition.text = "Master"
-                    }
+        return cell
         
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
+        let selectedDetail = dataEmployees[indexPath.row]
+        let detail_item = DetailItemViewController()
         
-                return cell
-       
+        detail_item.employee = selectedDetail
+        
+        navigationController?.pushViewController(detail_item, animated: true)
+        
     }
 }

@@ -20,40 +20,44 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Danh sách nhân viên" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4So-Hy-7Qt">
-                    <rect key="frame" x="20" y="43" width="158" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SJK-yA-YSD">
-                    <rect key="frame" x="297" y="40" width="97" height="31"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="97" id="Qcp-I1-xIN"/>
-                        <constraint firstAttribute="height" constant="31" id="toE-Xp-aMs"/>
-                    </constraints>
-                    <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="plain" title="Chi tiết"/>
-                    <connections>
-                        <action selector="tapShowDetail:" destination="-1" eventType="touchUpInside" id="vQp-Vp-xC3"/>
-                    </connections>
-                </button>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="b1J-Vb-KSA">
-                    <rect key="frame" x="0.0" y="64" width="414" height="798"/>
+                    <rect key="frame" x="0.0" y="87" width="414" height="775"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h54-UG-j2i">
+                    <rect key="frame" x="0.0" y="48" width="414" height="31"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Danh sách nhân viên" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4So-Hy-7Qt">
+                            <rect key="frame" x="30" y="0.0" width="175" height="31"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SJK-yA-YSD">
+                            <rect key="frame" x="318" y="0.0" width="82" height="31"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Chi tiết"/>
+                            <connections>
+                                <action selector="tapShowDetail:" destination="-1" eventType="touchUpInside" id="vQp-Vp-xC3"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="top" secondItem="SJK-yA-YSD" secondAttribute="top" constant="4" id="3Oz-oK-eST"/>
-                <constraint firstItem="4So-Hy-7Qt" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="9bP-QX-DK1"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="top" secondItem="4So-Hy-7Qt" secondAttribute="top" constant="1" id="MYf-DD-f1k"/>
-                <constraint firstItem="b1J-Vb-KSA" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="b3X-a8-Yni"/>
-                <constraint firstItem="b1J-Vb-KSA" firstAttribute="top" secondItem="4So-Hy-7Qt" secondAttribute="bottom" id="eDL-eZ-vWw"/>
-                <constraint firstItem="b1J-Vb-KSA" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="qN2-0b-HfY"/>
-                <constraint firstItem="b1J-Vb-KSA" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="qsk-uc-9x8"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="SJK-yA-YSD" secondAttribute="trailing" constant="20" id="uwl-Tt-aFZ"/>
+                <constraint firstItem="h54-UG-j2i" firstAttribute="leading" secondItem="b1J-Vb-KSA" secondAttribute="leading" id="1Te-fb-MVC"/>
+                <constraint firstItem="h54-UG-j2i" firstAttribute="trailing" secondItem="b1J-Vb-KSA" secondAttribute="trailing" id="6oF-ru-njN"/>
+                <constraint firstItem="h54-UG-j2i" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="7AB-Y1-VVb"/>
+                <constraint firstItem="b1J-Vb-KSA" firstAttribute="top" secondItem="h54-UG-j2i" secondAttribute="bottom" constant="8" symbolic="YES" id="Euk-VD-oOD"/>
+                <constraint firstAttribute="bottom" secondItem="h54-UG-j2i" secondAttribute="bottom" constant="817" id="h3T-ZZ-6ee"/>
+                <constraint firstItem="b1J-Vb-KSA" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="iLd-NL-Ib7"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="h54-UG-j2i" secondAttribute="trailing" id="qwh-mb-tTy"/>
+                <constraint firstItem="h54-UG-j2i" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="4" id="tDV-I0-IIa"/>
             </constraints>
             <point key="canvasLocation" x="131.8840579710145" y="129.91071428571428"/>
         </view>
