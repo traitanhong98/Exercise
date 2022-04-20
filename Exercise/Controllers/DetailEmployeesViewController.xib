@@ -22,13 +22,11 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9Jy-3m-4GW">
-                    <rect key="frame" x="0.0" y="44" width="414" height="64"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Jy-3m-4GW">
+                    <rect key="frame" x="0.0" y="44" width="414" height="60"/>
                     <subviews>
-                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gDq-4s-ePG">
-                            <rect key="frame" x="22" y="17" width="95" height="31"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gDq-4s-ePG">
+                            <rect key="frame" x="20" y="14.5" width="56" height="31"/>
                             <state key="normal" title="Button"/>
                             <buttonConfiguration key="configuration" style="plain" title="Back"/>
                             <connections>
@@ -36,32 +34,32 @@
                             </connections>
                         </button>
                     </subviews>
-                    <color key="backgroundColor" systemColor="systemGray4Color"/>
+                    <constraints>
+                        <constraint firstItem="gDq-4s-ePG" firstAttribute="leading" secondItem="9Jy-3m-4GW" secondAttribute="leading" constant="20" id="DNK-vz-WBt"/>
+                        <constraint firstItem="gDq-4s-ePG" firstAttribute="centerY" secondItem="9Jy-3m-4GW" secondAttribute="centerY" id="VvV-3h-ox5"/>
+                        <constraint firstAttribute="height" constant="60" id="YQV-sv-3On"/>
+                    </constraints>
                 </view>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="totalEmployee" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8KX-Jn-eiC">
-                    <rect key="frame" x="20" y="173" width="374" height="21"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="totalEmployee" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8KX-Jn-eiC">
+                    <rect key="frame" x="20" y="204" width="374" height="20.5"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="totalEmployeeDay200" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rON-Bj-9LQ">
-                    <rect key="frame" x="20" y="225" width="374" height="21"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="totalSalary" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6MG-Qg-SGS">
+                    <rect key="frame" x="20" y="340.5" width="374" height="20.5"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="totalSalary" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6MG-Qg-SGS">
-                    <rect key="frame" x="20" y="312" width="386" height="21"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="totalEmployeeDayLast60" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fec-R4-wml">
+                    <rect key="frame" x="20" y="295" width="374" height="20.5"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="totalEmployeeDayLast60" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fec-R4-wml">
-                    <rect key="frame" x="20" y="272" width="367" height="21"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="totalEmployeeDay200" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rON-Bj-9LQ">
+                    <rect key="frame" x="20" y="249.5" width="374" height="20.5"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
@@ -69,15 +67,30 @@
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="6MG-Qg-SGS" firstAttribute="trailing" secondItem="fec-R4-wml" secondAttribute="trailing" id="0AB-pE-JRo"/>
+                <constraint firstItem="6MG-Qg-SGS" firstAttribute="leading" secondItem="fec-R4-wml" secondAttribute="leading" id="883-od-ybc"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="fec-R4-wml" secondAttribute="trailing" constant="20" id="Dr5-xO-raw"/>
+                <constraint firstItem="rON-Bj-9LQ" firstAttribute="trailing" secondItem="fec-R4-wml" secondAttribute="trailing" id="SOF-uv-cnO"/>
+                <constraint firstItem="9Jy-3m-4GW" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="TFN-1d-6YG"/>
+                <constraint firstItem="8KX-Jn-eiC" firstAttribute="top" secondItem="9Jy-3m-4GW" secondAttribute="bottom" constant="100" id="XkL-vV-bbq"/>
+                <constraint firstItem="6MG-Qg-SGS" firstAttribute="top" secondItem="fec-R4-wml" secondAttribute="bottom" constant="25" id="afw-y4-jQC"/>
+                <constraint firstItem="8KX-Jn-eiC" firstAttribute="leading" secondItem="rON-Bj-9LQ" secondAttribute="leading" id="ahU-8T-hrT"/>
+                <constraint firstItem="rON-Bj-9LQ" firstAttribute="top" secondItem="8KX-Jn-eiC" secondAttribute="bottom" constant="25" id="b0C-Kj-dve"/>
+                <constraint firstItem="9Jy-3m-4GW" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="bYL-PB-UMm"/>
+                <constraint firstItem="9Jy-3m-4GW" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="cTa-Dj-q6d"/>
+                <constraint firstItem="fec-R4-wml" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="n4f-Ca-X3h"/>
+                <constraint firstItem="8KX-Jn-eiC" firstAttribute="trailing" secondItem="rON-Bj-9LQ" secondAttribute="trailing" id="new-VQ-3Yt"/>
+                <constraint firstItem="fec-R4-wml" firstAttribute="top" secondItem="rON-Bj-9LQ" secondAttribute="bottom" constant="25" id="vFq-UC-Jbt"/>
+                <constraint firstItem="rON-Bj-9LQ" firstAttribute="leading" secondItem="fec-R4-wml" secondAttribute="leading" id="xHn-4s-Hla"/>
+                <constraint firstItem="fec-R4-wml" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="zU9-Zd-fgp"/>
+            </constraints>
             <point key="canvasLocation" x="131.8840579710145" y="81.696428571428569"/>
         </view>
     </objects>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemGray4Color">
-            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

@@ -27,22 +27,17 @@ class DetailEmployeesViewController: UIViewController {
         let filterArrLastDayWorking = mapArrLastDayWorking.filter({$0 >= 200})
         
         for salary in mapArrLastDayWorking {
-            if salary < 200 {
+            switch salary {
+            case 0..<200:
                 arrSalaryEmployee.append(1000)
-            } else if salary >= 200 && salary < 400 {
+            case 200..<400:
                 arrSalaryEmployee.append(1500)
-            } else {
+            default:
                 arrSalaryEmployee.append(2000)
             }
         }
-        print(mapArrLastDayWorking)
-        print(arrSalaryEmployee)
-        
+
         let totalSalaryEmployee = arrSalaryEmployee.reduce(0, {$0 + $1})
-        print(totalSalaryEmployee)
-        
-        let rank = EmployeeRanks.getEmployeeRanks(dayWorking: mapArrLastDayWorking[0])
-        print(rank)
         
         totalEmployees.text = "Có tất cả \(employee.count) nhân viên"
         fillEmployee.text   = "Có \(filterArrDayWorking.count) nhân viên đã làm việc trên 200 ngày"
