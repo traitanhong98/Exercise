@@ -120,5 +120,13 @@ let employees: [Employee] = [
           address: "4334 Feil Loaf",
           isMale: false,
           status: "35",
-          dayWorking: 500)
+          dayWorking: 500),
+    .init(id: "15",
+          name: "Freda Kilback Kilback",
+          createAt: "2021-08-14T16:54:34.223Z",
+          avatar: "undefined - Imgur (13)",
+          address: "4334 Feil Loaf",
+          isMale: false,
+          status: "38",
+          dayWorking: 150)
 ]
